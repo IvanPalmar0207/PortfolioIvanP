@@ -1,0 +1,30 @@
+/*
+    Font Style
+*/
+
+@font-face {
+    font-family: "Bella";
+    src: url('../fonts/Bella.ttf');
+}
+
+.containerAboutMe{
+    padding: 150px;
+    text-align: center;    
+}
+
+.containerAboutMe .aboutMeH1{
+    font-family: 'Bella';
+    font-size: 3rem;
+}
+
+.containerAboutMe .aboutMePar{
+    margin-top: 50px;
+}
+
+.containerAboutMe .containerAboutButton{
+    margin-top: 50px;
+}
+
+.containerAboutMe .aboutMeButton{    
+    background-color: yellowgreen;
+}
