@@ -1,0 +1,14 @@
+.containerProjectsSection{
+    padding: 150px;
+    padding-top: 0px;
+}
+
+.titleProjects{
+    text-align: center;
+}
+
+.containerCardProjects{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

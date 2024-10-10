@@ -7,10 +7,10 @@ import './styles/navBar.css'
 export function NavBar(){
     return(
         <nav>
-            <div>
+            <div className="containerPictureProfile">
                 <img src="" alt="logoImage" />
                 <h3>
-                    Ivan David Palmar Martinez
+                    Ivan Palmar
                 </h3>
             </div>
             <ul>

@@ -16,7 +16,7 @@ import phpLogo from'./img/experience/phpLogo.svg'
 import postgreLogo from'./img/experience/postgreLogo.svg'
 import reactLogo from'./img/experience/reactLogo.svg'
 //Styles
-import './experience.css'
+import './styles/experience.css'
 
 export function Experience(){
 
@@ -96,11 +96,11 @@ export function Experience(){
     ]
 
     return(
-        <section>
+        <section className='containerExperienceSection'>
             <h3>
                 Let's Get to Know Me!                    
             </h3>
-            <div>                
+            <div className='containerParImgExperience'>                
                 <p>
                     I am an Analysis and Software Developer technologist, i know
                     frameworks for front-end development such as React,
@@ -124,28 +124,30 @@ export function Experience(){
                 <img src="" alt="profilePicture" />
             </div>
 
-            <div>
+            <div className='containerSkillExpe'>
                 <div>
                     <h3>
                         My Skills gained through years
                     </h3>
                 </div>
-                {tools.map((tool) => {
-                    return(
-                        <CardTool 
-                            key={tool.id} 
-                            imageUrl={tool.imageUrl} 
-                            nameTool={tool.nameTool} 
-                            descriptionTool={tool.descriptionTool}
-                        />
-                    )
-                })}                
+                <div className='containerSkillsGained'>
+                    {tools.map((tool) => {
+                        return(
+                            <CardTool 
+                                key={tool.id} 
+                                imageUrl={tool.imageUrl} 
+                                nameTool={tool.nameTool} 
+                                descriptionTool={tool.descriptionTool}
+                            />
+                        )
+                    })}  
+                </div>              
             </div>
 
-            <div>
-                <Link>
+            <div className='containerExpeButton'>
+                <a href="">
                     Contact Me
-                </Link>
+                </a>
             </div>
         </section>
     )

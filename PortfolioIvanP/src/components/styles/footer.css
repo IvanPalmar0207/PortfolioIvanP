@@ -1,0 +1,14 @@
+footer{
+    padding: 50px;
+    width: 100%;
+}
+
+.containerFooterSection{
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerCopyFooter{
+    text-align: center;
+    margin-top: 30px;
+}

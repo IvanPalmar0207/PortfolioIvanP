@@ -1,0 +1,50 @@
+.containerExperienceSection{
+    padding: 150px;
+    padding-top: 0px;
+}
+
+.containerExperienceSection h3{
+    text-align: center;
+}
+
+.containerParImgExperience{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.containerParImgExperience p{
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.containerSkillExpe h3{
+    margin-top: 60px;
+}
+
+.containerSkillsGained{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+}
+
+.containerExpeButton{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.containerExpeButton a{
+    background-color: yellowgreen;
+    font-family: 'Bella';
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in;
+}
+
+.containerExpeButton a:hover{
+    color: white;
+    background-color: black;
+}

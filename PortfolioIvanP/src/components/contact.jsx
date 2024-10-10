@@ -14,34 +14,40 @@ export function ContactMe(){
     })
 
     return(
-        <section>
-            <div>
+        <section className='containerContactSection'>
+            <div className='containerContactH2'>
                 <h2>
                     Go Ahead and Send Me a Message!
                 </h2>
+            </div>
+            <div className='containerContactH3'>
                 <h3>
                     If you want to make a proposal or simply make a new 
                     contact, let's write something
                 </h3>
             </div>
-            <div>
+            <div className='containerFormContact'>
                 <form onSubmit={onSubmitForm}>                    
-                    <div>
+                    <div className='inputContainer'>
                         <label htmlFor="firstName">First Name:</label>
+                        <br />
                         <input type="text" placeholder = "Enter your first name"
                         {...register("firstName", {required : true, minLength : 4})}
                         />
                         <label htmlFor="lastName">Last Name:</label>
+                        <br />
                         <input type="text" placeholder = "Enter your last name"
                         {...register("lastName", {required : true, minLength : 4})}
                         />
                     </div>
-                    <div>
+                    <div className='inputContainer'>
                         <label htmlFor="phoneNumber">Phone Number:</label>
+                        <br />
                         <input type="text" placeholder = "Enter your phone number"
                         {...register("phoneNumber", {required : true, minLength : 10, maxLength : 10})}
                         />
-                        <label htmlFor=""></label>
+                        <label htmlFor="emailAddress">Email Address</label>
+                        <br />
                         <input type="email" placeholder = "Enter your email address"
                         {...register("emailAddress", {
                             required : true,
@@ -52,6 +58,8 @@ export function ContactMe(){
                         })}
                         />                    
                     </div>
+                    <label htmlFor="messageContact">Send your message</label>
+                    <br />
                     <textarea placeholder="Send your message, we'll get in contact really soon, i hope you are doing so well"
                     {...register("messageContact", {required : true, minLength : 10})}
                     ></textarea>

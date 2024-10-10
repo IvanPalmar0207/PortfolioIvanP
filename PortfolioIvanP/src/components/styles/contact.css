@@ -1,0 +1,30 @@
+.containerContactSection{
+    padding: 150px;
+    padding-top: 0px;    
+    padding-bottom: 100px;
+}
+
+.containerContactH2 h2{
+    text-align: center;
+}
+
+.containerContactH3 h3{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.containerFormContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerFormContact form{
+    margin-top: 30px;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,20 @@
+nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerPictureProfile{
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    display: inline-block;   
+    margin: 30px;
+}
